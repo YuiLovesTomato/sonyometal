@@ -9,6 +9,6 @@ app.get('/', function(req, res) {
 	res.send('sonyometal');
 })
 
-app.get('/apple', function(req, res) {
-	res.sendFile(__dirname + '/apple.html');
+app.get('/subpage', function(req, res) {
+	res.sendFile(__dirname + '/subpage.html');
 })
