@@ -4,31 +4,56 @@
 [33m[nodemon] watching extensions: js,mjs,json[39m
 [32m[nodemon] starting `node index.js`[39m
 listening on 8080
-[33m[nodemon] 2.0.20[39m
-[33m[nodemon] to restart at any time, enter `rs`[39m
-[33m[nodemon] watching path(s): *.*[39m
-[33m[nodemon] watching extensions: js,mjs,json[39m
-[32m[nodemon] starting `node index.js`[39m
-listening on 8080
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node index.js`[39m
-listening on 8080
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node index.js`[39m
-listening on 8080
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node index.js`[39m
-listening on 8080
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node index.js`[39m
-(node:14105) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.
-(Use `node --trace-warnings ...` to show where the warning was created)
-/home/pang/sonyometal/index.js:1
-import 'bootstrap'
-^^^^^^
+ReferenceError: /home/pang/sonyometal/views/list.ejs:16
+    14| 
+    15| 		<ul>
+ >> 16| 		<a href='/info/<%= info[0].title %>'></a>
+    17| 		</ul>
+    18| 
+    19| 				
 
-SyntaxError: Cannot use import statement outside a module
+info is not defined
+    at eval ("/home/pang/sonyometal/views/list.ejs":12:26)
+    at list (/home/pang/sonyometal/node_modules/ejs/lib/ejs.js:703:17)
+    at tryHandleCache (/home/pang/sonyometal/node_modules/ejs/lib/ejs.js:274:36)
+    at exports.renderFile [as engine] (/home/pang/sonyometal/node_modules/ejs/lib/ejs.js:491:10)
+    at View.render (/home/pang/sonyometal/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/pang/sonyometal/node_modules/express/lib/application.js:657:10)
+    at Function.render (/home/pang/sonyometal/node_modules/express/lib/application.js:609:3)
+    at ServerResponse.render (/home/pang/sonyometal/node_modules/express/lib/response.js:1039:7)
+    at /home/pang/sonyometal/index.js:39:6
+    at Layer.handle [as handle_request] (/home/pang/sonyometal/node_modules/express/lib/router/layer.js:95:5)
+pang
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+listening on 8080
+ReferenceError: /home/pang/sonyometal/views/list.ejs:16
+    14| 
+    15| 		<ul>
+ >> 16| 		<a href='/info/<%= info[0].title %>'></a>
+    17| 		</ul>
+    18| 
+    19| 				
+
+info is not defined
+    at eval ("/home/pang/sonyometal/views/list.ejs":12:26)
+    at list (/home/pang/sonyometal/node_modules/ejs/lib/ejs.js:703:17)
+    at tryHandleCache (/home/pang/sonyometal/node_modules/ejs/lib/ejs.js:274:36)
+    at exports.renderFile [as engine] (/home/pang/sonyometal/node_modules/ejs/lib/ejs.js:491:10)
+    at View.render (/home/pang/sonyometal/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/pang/sonyometal/node_modules/express/lib/application.js:657:10)
+    at Function.render (/home/pang/sonyometal/node_modules/express/lib/application.js:609:3)
+    at ServerResponse.render (/home/pang/sonyometal/node_modules/express/lib/response.js:1039:7)
+    at /home/pang/sonyometal/index.js:39:6
+    at Layer.handle [as handle_request] (/home/pang/sonyometal/node_modules/express/lib/router/layer.js:95:5)
+pang
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+/home/pang/sonyometal/index.js:39
+	res.render('list.ejs', { info : res );
+	                                    ^
+
+SyntaxError: Unexpected token ')'
     at Object.compileFunction (node:vm:360:18)
     at wrapSafe (node:internal/modules/cjs/loader:1078:15)
     at Module._compile (node:internal/modules/cjs/loader:1113:27)
@@ -42,76 +67,11 @@ Node.js v18.10.0
 [31m[nodemon] app crashed - waiting for file changes before starting...[39m
 [32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] starting `node index.js`[39m
-(node:14120) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.
-(Use `node --trace-warnings ...` to show where the warning was created)
-/home/pang/sonyometal/index.js:1
-import 'bootstrap'
-^^^^^^
+/home/pang/sonyometal/index.js:39
+	res.render('list.ejs', { info : res );
+	                                    ^
 
-SyntaxError: Cannot use import statement outside a module
-    at Object.compileFunction (node:vm:360:18)
-    at wrapSafe (node:internal/modules/cjs/loader:1078:15)
-    at Module._compile (node:internal/modules/cjs/loader:1113:27)
-    at Module._extensions..js (node:internal/modules/cjs/loader:1203:10)
-    at Module.load (node:internal/modules/cjs/loader:1027:32)
-    at Module._load (node:internal/modules/cjs/loader:868:12)
-    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
-    at node:internal/main/run_main_module:23:47
-
-Node.js v18.10.0
-[31m[nodemon] app crashed - waiting for file changes before starting...[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node index.js`[39m
-(node:14134) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.
-(Use `node --trace-warnings ...` to show where the warning was created)
-/home/pang/sonyometal/index.js:1
-import 'bootstrap'
-^^^^^^
-
-SyntaxError: Cannot use import statement outside a module
-    at Object.compileFunction (node:vm:360:18)
-    at wrapSafe (node:internal/modules/cjs/loader:1078:15)
-    at Module._compile (node:internal/modules/cjs/loader:1113:27)
-    at Module._extensions..js (node:internal/modules/cjs/loader:1203:10)
-    at Module.load (node:internal/modules/cjs/loader:1027:32)
-    at Module._load (node:internal/modules/cjs/loader:868:12)
-    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
-    at node:internal/main/run_main_module:23:47
-
-Node.js v18.10.0
-[31m[nodemon] app crashed - waiting for file changes before starting...[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node index.js`[39m
-(node:14143) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.
-(Use `node --trace-warnings ...` to show where the warning was created)
-/home/pang/sonyometal/index.js:1
-import 'bootstrap'
-^^^^^^
-
-SyntaxError: Cannot use import statement outside a module
-    at Object.compileFunction (node:vm:360:18)
-    at wrapSafe (node:internal/modules/cjs/loader:1078:15)
-    at Module._compile (node:internal/modules/cjs/loader:1113:27)
-    at Module._extensions..js (node:internal/modules/cjs/loader:1203:10)
-    at Module.load (node:internal/modules/cjs/loader:1027:32)
-    at Module._load (node:internal/modules/cjs/loader:868:12)
-    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
-    at node:internal/main/run_main_module:23:47
-
-Node.js v18.10.0
-[31m[nodemon] app crashed - waiting for file changes before starting...[39m
-[33m[nodemon] 2.0.20[39m
-[33m[nodemon] to restart at any time, enter `rs`[39m
-[33m[nodemon] watching path(s): *.*[39m
-[33m[nodemon] watching extensions: js,mjs,json[39m
-[32m[nodemon] starting `node index.js`[39m
-(node:14169) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.
-(Use `node --trace-warnings ...` to show where the warning was created)
-/home/pang/sonyometal/index.js:1
-import 'bootstrap'
-^^^^^^
-
-SyntaxError: Cannot use import statement outside a module
+SyntaxError: Unexpected token ')'
     at Object.compileFunction (node:vm:360:18)
     at wrapSafe (node:internal/modules/cjs/loader:1078:15)
     at Module._compile (node:internal/modules/cjs/loader:1113:27)
@@ -126,41 +86,297 @@ Node.js v18.10.0
 [32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] starting `node index.js`[39m
 listening on 8080
+TypeError: Cannot read properties of undefined (reading 'id')
+    at /home/pang/sonyometal/index.js:38:22
+    at Layer.handle [as handle_request] (/home/pang/sonyometal/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/pang/sonyometal/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/pang/sonyometal/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/pang/sonyometal/node_modules/express/lib/router/layer.js:95:5)
+    at /home/pang/sonyometal/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/pang/sonyometal/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/pang/sonyometal/node_modules/express/lib/router/index.js:280:10)
+    at urlencodedParser (/home/pang/sonyometal/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (/home/pang/sonyometal/node_modules/express/lib/router/layer.js:95:5)
 [32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] starting `node index.js`[39m
 listening on 8080
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node index.js`[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node index.js`[39m
-listening on 8080
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node index.js`[39m
-listening on 8080
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node index.js`[39m
-listening on 8080
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node index.js`[39m
-(node:14392) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.
-(Use `node --trace-warnings ...` to show where the warning was created)
-/home/pang/sonyometal/index.js:4
-import bootstrap from 'bootstrap/dist/js/bootstrap.bundle'
-^^^^^^
+pang
+/home/pang/sonyometal/node_modules/mysql/lib/protocol/Parser.js:437
+      throw err; // Rethrow non-MySQL errors
+      ^
 
-SyntaxError: Cannot use import statement outside a module
-    at Object.compileFunction (node:vm:360:18)
-    at wrapSafe (node:internal/modules/cjs/loader:1078:15)
-    at Module._compile (node:internal/modules/cjs/loader:1113:27)
-    at Module._extensions..js (node:internal/modules/cjs/loader:1203:10)
-    at Module.load (node:internal/modules/cjs/loader:1027:32)
-    at Module._load (node:internal/modules/cjs/loader:868:12)
-    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
-    at node:internal/main/run_main_module:23:47
+TypeError: res.render is not a function
+    at Query.<anonymous> (/home/pang/sonyometal/index.js:38:7)
+    at Query.<anonymous> (/home/pang/sonyometal/node_modules/mysql/lib/Connection.js:526:10)
+    at Query._callback (/home/pang/sonyometal/node_modules/mysql/lib/Connection.js:488:16)
+    at Sequence.end (/home/pang/sonyometal/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at Query._handleFinalResultPacket (/home/pang/sonyometal/node_modules/mysql/lib/protocol/sequences/Query.js:149:8)
+    at Query.EofPacket (/home/pang/sonyometal/node_modules/mysql/lib/protocol/sequences/Query.js:133:8)
+    at Protocol._parsePacket (/home/pang/sonyometal/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/home/pang/sonyometal/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/home/pang/sonyometal/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/home/pang/sonyometal/node_modules/mysql/lib/protocol/Protocol.js:38:16)
 
 Node.js v18.10.0
 [31m[nodemon] app crashed - waiting for file changes before starting...[39m
 [32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] starting `node index.js`[39m
 listening on 8080
+pang
+/home/pang/sonyometal/node_modules/mysql/lib/protocol/Parser.js:437
+      throw err; // Rethrow non-MySQL errors
+      ^
+
+TypeError: res.render is not a function
+    at Query.<anonymous> (/home/pang/sonyometal/index.js:38:7)
+    at Query.<anonymous> (/home/pang/sonyometal/node_modules/mysql/lib/Connection.js:526:10)
+    at Query._callback (/home/pang/sonyometal/node_modules/mysql/lib/Connection.js:488:16)
+    at Sequence.end (/home/pang/sonyometal/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at Query._handleFinalResultPacket (/home/pang/sonyometal/node_modules/mysql/lib/protocol/sequences/Query.js:149:8)
+    at Query.EofPacket (/home/pang/sonyometal/node_modules/mysql/lib/protocol/sequences/Query.js:133:8)
+    at Protocol._parsePacket (/home/pang/sonyometal/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/home/pang/sonyometal/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/home/pang/sonyometal/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/home/pang/sonyometal/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+
+Node.js v18.10.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+listening on 8080
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+listening on 8080
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+listening on 8080
+TypeError: /home/pang/sonyometal/views/list.ejs:16
+    14| 
+    15| 		<ul>
+ >> 16| 		<a href='/info/<%= info[0].title %>'></a>
+    17| 		</ul>
+    18| 
+    19| 				
+
+Cannot read properties of undefined (reading 'title')
+    at eval ("/home/pang/sonyometal/views/list.ejs":12:34)
+    at list (/home/pang/sonyometal/node_modules/ejs/lib/ejs.js:703:17)
+    at tryHandleCache (/home/pang/sonyometal/node_modules/ejs/lib/ejs.js:274:36)
+    at exports.renderFile [as engine] (/home/pang/sonyometal/node_modules/ejs/lib/ejs.js:491:10)
+    at View.render (/home/pang/sonyometal/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/pang/sonyometal/node_modules/express/lib/application.js:657:10)
+    at Function.render (/home/pang/sonyometal/node_modules/express/lib/application.js:609:3)
+    at ServerResponse.render (/home/pang/sonyometal/node_modules/express/lib/response.js:1039:7)
+    at /home/pang/sonyometal/index.js:39:6
+    at Layer.handle [as handle_request] (/home/pang/sonyometal/node_modules/express/lib/router/layer.js:95:5)
+/home/pang/sonyometal/node_modules/mysql/lib/protocol/Parser.js:437
+      throw err; // Rethrow non-MySQL errors
+      ^
+
+TypeError: Cannot read properties of null (reading '0')
+    at Query.<anonymous> (/home/pang/sonyometal/index.js:37:18)
+    at Query.<anonymous> (/home/pang/sonyometal/node_modules/mysql/lib/Connection.js:526:10)
+    at Query._callback (/home/pang/sonyometal/node_modules/mysql/lib/Connection.js:488:16)
+    at Sequence.end (/home/pang/sonyometal/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at Query._handleFinalResultPacket (/home/pang/sonyometal/node_modules/mysql/lib/protocol/sequences/Query.js:149:8)
+    at Query.EofPacket (/home/pang/sonyometal/node_modules/mysql/lib/protocol/sequences/Query.js:133:8)
+    at Protocol._parsePacket (/home/pang/sonyometal/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/home/pang/sonyometal/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/home/pang/sonyometal/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/home/pang/sonyometal/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+
+Node.js v18.10.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+listening on 8080
+TypeError: /home/pang/sonyometal/views/list.ejs:16
+    14| 
+    15| 		<ul>
+ >> 16| 		<a href='/info/<%= info[0].title %>'></a>
+    17| 		</ul>
+    18| 
+    19| 				
+
+Cannot read properties of undefined (reading 'title')
+    at eval ("/home/pang/sonyometal/views/list.ejs":12:34)
+    at list (/home/pang/sonyometal/node_modules/ejs/lib/ejs.js:703:17)
+    at tryHandleCache (/home/pang/sonyometal/node_modules/ejs/lib/ejs.js:274:36)
+    at exports.renderFile [as engine] (/home/pang/sonyometal/node_modules/ejs/lib/ejs.js:491:10)
+    at View.render (/home/pang/sonyometal/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/pang/sonyometal/node_modules/express/lib/application.js:657:10)
+    at Function.render (/home/pang/sonyometal/node_modules/express/lib/application.js:609:3)
+    at ServerResponse.render (/home/pang/sonyometal/node_modules/express/lib/response.js:1039:7)
+    at /home/pang/sonyometal/index.js:39:6
+    at Layer.handle [as handle_request] (/home/pang/sonyometal/node_modules/express/lib/router/layer.js:95:5)
+pang
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+listening on 8080
+TypeError: /home/pang/sonyometal/views/list.ejs:16
+    14| 
+    15| 		<ul>
+ >> 16| 		<a href='/info/<%= info[0].title %>'></a>
+    17| 		</ul>
+    18| 
+    19| 				
+
+Cannot read properties of undefined (reading 'title')
+    at eval ("/home/pang/sonyometal/views/list.ejs":12:34)
+    at list (/home/pang/sonyometal/node_modules/ejs/lib/ejs.js:703:17)
+    at tryHandleCache (/home/pang/sonyometal/node_modules/ejs/lib/ejs.js:274:36)
+    at exports.renderFile [as engine] (/home/pang/sonyometal/node_modules/ejs/lib/ejs.js:491:10)
+    at View.render (/home/pang/sonyometal/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/pang/sonyometal/node_modules/express/lib/application.js:657:10)
+    at Function.render (/home/pang/sonyometal/node_modules/express/lib/application.js:609:3)
+    at ServerResponse.render (/home/pang/sonyometal/node_modules/express/lib/response.js:1039:7)
+    at /home/pang/sonyometal/index.js:39:6
+    at Layer.handle [as handle_request] (/home/pang/sonyometal/node_modules/express/lib/router/layer.js:95:5)
+pang
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+listening on 8080
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+listening on 8080
+pang
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+listening on 8080
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+listening on 8080
+pang
+pang
+pang
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+listening on 8080
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+listening on 8080
+pang
+pang
+pang
+Error: Could not find matching close tag for "<%".
+    at /home/pang/sonyometal/node_modules/ejs/lib/ejs.js:752:19
+    at Array.forEach (<anonymous>)
+    at Template.generateSource (/home/pang/sonyometal/node_modules/ejs/lib/ejs.js:742:15)
+    at Template.compile (/home/pang/sonyometal/node_modules/ejs/lib/ejs.js:587:12)
+    at Object.compile (/home/pang/sonyometal/node_modules/ejs/lib/ejs.js:398:16)
+    at handleCache (/home/pang/sonyometal/node_modules/ejs/lib/ejs.js:235:18)
+    at tryHandleCache (/home/pang/sonyometal/node_modules/ejs/lib/ejs.js:274:16)
+    at exports.renderFile [as engine] (/home/pang/sonyometal/node_modules/ejs/lib/ejs.js:491:10)
+    at View.render (/home/pang/sonyometal/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/pang/sonyometal/node_modules/express/lib/application.js:657:10)
+pang
+pang
+TypeError: /home/pang/sonyometal/views/list.ejs:17
+    15| 		<ul>
+    16| 			<% for(var i=[i]; i<info.length; i++) {%>
+ >> 17| 				<li><a href='/info/<%= info[[i]].id %>'><%= info[[i]].id %></a></li>
+    18| 				<li><a href='/info/<%= info[[i]].title %>'><%= info[i].title %></a></li>
+    19| 			<% } %>
+    20| 		</ul>
+
+Cannot read properties of undefined (reading 'id')
+    at eval ("/home/pang/sonyometal/views/list.ejs":15:36)
+    at list (/home/pang/sonyometal/node_modules/ejs/lib/ejs.js:703:17)
+    at tryHandleCache (/home/pang/sonyometal/node_modules/ejs/lib/ejs.js:274:36)
+    at exports.renderFile [as engine] (/home/pang/sonyometal/node_modules/ejs/lib/ejs.js:491:10)
+    at View.render (/home/pang/sonyometal/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/pang/sonyometal/node_modules/express/lib/application.js:657:10)
+    at Function.render (/home/pang/sonyometal/node_modules/express/lib/application.js:609:3)
+    at ServerResponse.render (/home/pang/sonyometal/node_modules/express/lib/response.js:1039:7)
+    at Query.<anonymous> (/home/pang/sonyometal/index.js:38:7)
+    at Query.<anonymous> (/home/pang/sonyometal/node_modules/mysql/lib/Connection.js:526:10)
+pang
+pang
+pang
+pang
+pang
+ReferenceError: /home/pang/sonyometal/views/list.ejs:16
+    14| 
+    15| 			<% for(var i=0; i<info.length; i++) {%>
+ >> 16| 			<%= info[o].id %> : <h5><a href='/info/<%= info[[i]].title %>'><%= info[i].title %><h5>
+    17| 			<%= info[i].post %>
+    18| 			<% } %>
+    19| 
+
+o is not defined
+    at eval ("/home/pang/sonyometal/views/list.ejs":15:31)
+    at list (/home/pang/sonyometal/node_modules/ejs/lib/ejs.js:703:17)
+    at tryHandleCache (/home/pang/sonyometal/node_modules/ejs/lib/ejs.js:274:36)
+    at exports.renderFile [as engine] (/home/pang/sonyometal/node_modules/ejs/lib/ejs.js:491:10)
+    at View.render (/home/pang/sonyometal/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/pang/sonyometal/node_modules/express/lib/application.js:657:10)
+    at Function.render (/home/pang/sonyometal/node_modules/express/lib/application.js:609:3)
+    at ServerResponse.render (/home/pang/sonyometal/node_modules/express/lib/response.js:1039:7)
+    at Query.<anonymous> (/home/pang/sonyometal/index.js:38:7)
+    at Query.<anonymous> (/home/pang/sonyometal/node_modules/mysql/lib/Connection.js:526:10)
+pang
+ReferenceError: /home/pang/sonyometal/views/list.ejs:16
+    14| 
+    15| 			<% for(var i=0; i<info.length; i++) {%>
+ >> 16| 			<%= info[o].id %> : <h5><a href='/info/<%= info[[i]].title %>'><%= info[i].title %></h5>
+    17| 			<% } %>
+    18| 
+    19| 				
+
+o is not defined
+    at eval ("/home/pang/sonyometal/views/list.ejs":15:31)
+    at list (/home/pang/sonyometal/node_modules/ejs/lib/ejs.js:703:17)
+    at tryHandleCache (/home/pang/sonyometal/node_modules/ejs/lib/ejs.js:274:36)
+    at exports.renderFile [as engine] (/home/pang/sonyometal/node_modules/ejs/lib/ejs.js:491:10)
+    at View.render (/home/pang/sonyometal/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/pang/sonyometal/node_modules/express/lib/application.js:657:10)
+    at Function.render (/home/pang/sonyometal/node_modules/express/lib/application.js:609:3)
+    at ServerResponse.render (/home/pang/sonyometal/node_modules/express/lib/response.js:1039:7)
+    at Query.<anonymous> (/home/pang/sonyometal/index.js:38:7)
+    at Query.<anonymous> (/home/pang/sonyometal/node_modules/mysql/lib/Connection.js:526:10)
+pang
+pang
+pang
+pang
+pang
+pang
+pang
+pang
+pang
+record inserted
+pang
+pang
+pang
+pang
+pang
+pang
+pang
+pang
+pang
+pang
+pang
+pang
+pang
+pang
+pang
+pang
+pang
+pang
+pang
+pang
+pang
+pang
+pang
+pang
+pang
+pang
+pang
+pang
+pang
+pang
+pang
+pang
+pang
+pang
+pang
+pang

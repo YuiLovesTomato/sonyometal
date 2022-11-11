@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=deivce-width, initial-scale=1.[i]">
+		<meta http-equv="X-UA-Compatible" content="ie-edge">
+		<title>sonyometal</title>
+	        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl[i]vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+		<link rel="stylesheet" href="tree_fontello/css/fontello.css">
+		<style>
+		.tree{
+			color:#393939;
+		}
+		.tree, .tree ul{
+			list-style: none;
+			padding-left:17px;
+		}
+		.tree *:before{
+			width:17px;
+			height:17px;
+			display:inline-block;
+		}
+		.tree label{
+			cursor: pointer;
+		}
+		.tree label:before{
+			content:'\f256';
+			font-family: fontello;
+		}
+		.tree a{
+			text-decoration: none;
+			color:#393939;
+		}
+		.tree a:before{
+			content:'\e800';
+			font-family: fontello;
+		}
+
+		.tree input[type="checkbox"] {
+			display: none;
+		}
+		.tree input[type="checkbox"]:checked~ul {
+			display: none;
+		}
+		.tree input[type="checkbox"]:checked+label:before{
+			content:'\f255';
+			font-family: fontello;
+		}
+		style="display:none" 
+		</style>
+		</head>
+
+	<body>
+		<h4>sonyometal</h4>
+		
+		<p>click to view</p>
+
+			<% for(var i=0; i<info.length; i++) {%>
+
+			<ul class="tree">
+				<li>
+					<input type="checkbox" id="<%=i%>">
+					<label for="<%=i%>"> <strong> <%=info[i].id%> </strong> : <%=info[i].title%> </label>
+					<ul>
+						<li> <%=info[i].post%></li>
+					</ul>
+				</li>
+			</ul>
+
+			<% } %>
+
+				
+		<a href="/"><button type="button" class="btn btn-primary">go back</button></a>
+
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+	</body>
+
+</html>
