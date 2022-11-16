@@ -443,3 +443,147 @@ pang
 pang
 pang
 pang
+record inserted
+pang
+pang
+pang
+pang
+pang
+pang
+pang
+pang
+pang
+pang
+pang
+pang
+pang
+pang
+pang
+pang
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: Parse Error: Invalid method encountered
+Emitted 'error' event on Socket instance at:
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  bytesParsed: 301,
+  code: 'HPE_INVALID_METHOD',
+  reason: 'Invalid method encountered',
+  rawPacket: Buffer(322) [Uint8Array] [
+     80,  79,  83,  84,  32,  47,  71, 112, 111, 110,  70, 111,
+    114, 109,  47, 100, 105,  97, 103,  95,  70, 111, 114, 109,
+     63, 105, 109,  97, 103, 101, 115,  47,  32,  72,  84,  84,
+     80,  47,  49,  46,  49,  13,  10,  72, 111, 115, 116,  58,
+     32,  49,  50,  55,  46,  48,  46,  48,  46,  49,  58,  56,
+     48,  56,  48,  13,  10,  67, 111, 110, 110, 101,  99, 116,
+    105, 111, 110,  58,  32, 107, 101, 101, 112,  45,  97, 108,
+    105, 118, 101,  13,  10,  65,  99,  99, 101, 112, 116,  45,
+     69, 110,  99, 111,
+    ... 222 more items
+  ]
+}
+
+Node.js v18.10.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[33m[nodemon] 2.0.20[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node index.js`[39m
+listening on 8080
+pang
+pang
+record inserted
+pang
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: Connection lost: The server closed the connection.
+    at Protocol.end (/home/pang/sonyometal/node_modules/mysql/lib/protocol/Protocol.js:112:13)
+    at Socket.<anonymous> (/home/pang/sonyometal/node_modules/mysql/lib/Connection.js:94:28)
+    at Socket.<anonymous> (/home/pang/sonyometal/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+Emitted 'error' event on Connection instance at:
+    at Connection._handleProtocolError (/home/pang/sonyometal/node_modules/mysql/lib/Connection.js:423:8)
+    at Protocol.emit (node:events:513:28)
+    at Protocol._delegateError (/home/pang/sonyometal/node_modules/mysql/lib/protocol/Protocol.js:398:10)
+    at Protocol.end (/home/pang/sonyometal/node_modules/mysql/lib/protocol/Protocol.js:116:8)
+    at Socket.<anonymous> (/home/pang/sonyometal/node_modules/mysql/lib/Connection.js:94:28)
+    [... lines matching original stack trace ...]
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  fatal: true,
+  code: 'PROTOCOL_CONNECTION_LOST'
+}
+
+Node.js v18.10.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+listening on 8080
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8080
+    at Server.setupListenHandle [as _listen2] (node:net:1485:16)
+    at listenInCluster (node:net:1533:12)
+    at Server.listen (node:net:1621:7)
+    at Function.listen (/home/pang/sonyometal/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/home/pang/sonyometal/index.js:25:5)
+    at Module._compile (node:internal/modules/cjs/loader:1149:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1203:10)
+    at Module.load (node:internal/modules/cjs/loader:1027:32)
+    at Module._load (node:internal/modules/cjs/loader:868:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1512:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8080
+}
+
+Node.js v18.10.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+[32m[nodemon] starting `node index.js`[39m
+listening on 8080
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8080
+    at Server.setupListenHandle [as _listen2] (node:net:1485:16)
+    at listenInCluster (node:net:1533:12)
+    at Server.listen (node:net:1621:7)
+    at Function.listen (/home/pang/sonyometal/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/home/pang/sonyometal/index.js:25:5)
+    at Module._compile (node:internal/modules/cjs/loader:1149:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1203:10)
+    at Module.load (node:internal/modules/cjs/loader:1027:32)
+    at Module._load (node:internal/modules/cjs/loader:868:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1512:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8080
+}
+
+Node.js v18.10.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m

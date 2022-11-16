@@ -34,7 +34,6 @@ app.get('/', function(req, res) {
 //list ejs
 app.get('/list', function(req, res) {
 	mysqlDB.query('SELECT * FROM posts', function (req, result) {
-		console.log(result[0].id);
 		res.render('list', { info : result });
 	});
 });
