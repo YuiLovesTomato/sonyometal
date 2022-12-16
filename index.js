@@ -28,13 +28,15 @@ app.listen(8080, function() {
 
 //go to home
 app.get('/', function(req, res) {
-	res.sendFile(__dirname + '/index.html');
+	mysqlDB.query('SELECT * FROM posts', function (req, result) {
+		res.render('index', { info : result });
+	});
 })
 
 //list ejs
 app.get('/list', function(req, res) {
 	mysqlDB.query('SELECT * FROM posts', function (req, result) {
-		res.render('list', { info : result });
+		res.render('index', { info : result });
 	});
 });
 
