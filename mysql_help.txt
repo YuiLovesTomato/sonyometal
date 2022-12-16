@@ -1,0 +1,5 @@
+docker run --name mariaDB -e MYSQL_ROOT_PASSWORD=(pw) -p 3308:3306 -d mariadb:latest
+
+docker exec -it mariaDB bash
+
+(figure out the database form in index.js and manage it)

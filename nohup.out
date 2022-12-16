@@ -587,3 +587,179 @@ Emitted 'error' event on Server instance at:
 
 Node.js v18.10.0
 [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[33m[nodemon] 2.0.20[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node index.js`[39m
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8080
+    at Server.setupListenHandle [as _listen2] (node:net:1485:16)
+    at listenInCluster (node:net:1533:12)
+    at Server.listen (node:net:1621:7)
+    at Function.listen (/home/pang/sonyometal/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/home/pang/sonyometal/index.js:25:5)
+    at Module._compile (node:internal/modules/cjs/loader:1149:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1203:10)
+    at Module.load (node:internal/modules/cjs/loader:1027:32)
+    at Module._load (node:internal/modules/cjs/loader:868:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1512:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8080
+}
+
+Node.js v18.10.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting child process[39m
+[32m[nodemon] starting `node index.js`[39m
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8080
+    at Server.setupListenHandle [as _listen2] (node:net:1485:16)
+    at listenInCluster (node:net:1533:12)
+    at Server.listen (node:net:1621:7)
+    at Function.listen (/home/pang/sonyometal/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/home/pang/sonyometal/index.js:25:5)
+    at Module._compile (node:internal/modules/cjs/loader:1149:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1203:10)
+    at Module.load (node:internal/modules/cjs/loader:1027:32)
+    at Module._load (node:internal/modules/cjs/loader:868:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1512:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8080
+}
+
+Node.js v18.10.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[33m[nodemon] 2.0.20[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node index.js`[39m
+listening on 8080
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: Connection lost: The server closed the connection.
+    at Protocol.end (/home/pang/sonyometal/node_modules/mysql/lib/protocol/Protocol.js:112:13)
+    at Socket.<anonymous> (/home/pang/sonyometal/node_modules/mysql/lib/Connection.js:94:28)
+    at Socket.<anonymous> (/home/pang/sonyometal/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+Emitted 'error' event on Connection instance at:
+    at Connection._handleProtocolError (/home/pang/sonyometal/node_modules/mysql/lib/Connection.js:423:8)
+    at Protocol.emit (node:events:513:28)
+    at Protocol._delegateError (/home/pang/sonyometal/node_modules/mysql/lib/protocol/Protocol.js:398:10)
+    at Protocol.end (/home/pang/sonyometal/node_modules/mysql/lib/protocol/Protocol.js:116:8)
+    at Socket.<anonymous> (/home/pang/sonyometal/node_modules/mysql/lib/Connection.js:94:28)
+    [... lines matching original stack trace ...]
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  fatal: true,
+  code: 'PROTOCOL_CONNECTION_LOST'
+}
+
+Node.js v18.10.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[33m[nodemon] 2.0.20[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node index.js`[39m
+listening on 8080
+[32m[nodemon] restarting child process[39m
+[32m[nodemon] starting `node index.js`[39m
+listening on 8080
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: Connection lost: The server closed the connection.
+    at Protocol.end (/home/pang/sonyometal/node_modules/mysql/lib/protocol/Protocol.js:112:13)
+    at Socket.<anonymous> (/home/pang/sonyometal/node_modules/mysql/lib/Connection.js:94:28)
+    at Socket.<anonymous> (/home/pang/sonyometal/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+Emitted 'error' event on Connection instance at:
+    at Connection._handleProtocolError (/home/pang/sonyometal/node_modules/mysql/lib/Connection.js:423:8)
+    at Protocol.emit (node:events:513:28)
+    at Protocol._delegateError (/home/pang/sonyometal/node_modules/mysql/lib/protocol/Protocol.js:398:10)
+    at Protocol.end (/home/pang/sonyometal/node_modules/mysql/lib/protocol/Protocol.js:116:8)
+    at Socket.<anonymous> (/home/pang/sonyometal/node_modules/mysql/lib/Connection.js:94:28)
+    [... lines matching original stack trace ...]
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  fatal: true,
+  code: 'PROTOCOL_CONNECTION_LOST'
+}
+
+Node.js v18.10.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[33m[nodemon] 2.0.20[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node index.js`[39m
+listening on 8080
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED ::1:3308
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1300:16)
+    --------------------
+    at Protocol._enqueue (/home/pang/sonyometal/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/home/pang/sonyometal/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at Connection.connect (/home/pang/sonyometal/node_modules/mysql/lib/Connection.js:116:18)
+    at Object.<anonymous> (/home/pang/sonyometal/index.js:13:9)
+    at Module._compile (node:internal/modules/cjs/loader:1149:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1203:10)
+    at Module.load (node:internal/modules/cjs/loader:1027:32)
+    at Module._load (node:internal/modules/cjs/loader:868:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47
+Emitted 'error' event on Connection instance at:
+    at Connection._handleProtocolError (/home/pang/sonyometal/node_modules/mysql/lib/Connection.js:423:8)
+    at Protocol.emit (node:events:513:28)
+    at Protocol._delegateError (/home/pang/sonyometal/node_modules/mysql/lib/protocol/Protocol.js:398:10)
+    at Handshake.<anonymous> (/home/pang/sonyometal/node_modules/mysql/lib/protocol/Protocol.js:153:12)
+    at Handshake.emit (node:events:513:28)
+    at Sequence.end (/home/pang/sonyometal/node_modules/mysql/lib/protocol/sequences/Sequence.js:78:12)
+    at Protocol.handleNetworkError (/home/pang/sonyometal/node_modules/mysql/lib/protocol/Protocol.js:369:14)
+    at Connection._handleNetworkError (/home/pang/sonyometal/node_modules/mysql/lib/Connection.js:418:18)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '::1',
+  port: 3308,
+  fatal: true
+}
+
+Node.js v18.10.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[33m[nodemon] 2.0.20[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node index.js`[39m
+listening on 8080
